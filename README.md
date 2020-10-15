@@ -1,12 +1,17 @@
-[![Build Status](https://travis-ci.com/wermetal/react-page-slides.svg?branch=master)](https://travis-ci.com/wermetal/react-page-slides)
-
-# react-page-slides
+# re-react-page-slides
 
 React component for creating fullscreen scrolling websites with parallax effect. Supports Typescript.
 
 ## Installation
+
 ```sh
-npm install --save react-page-slides
+npm install --save re-react-page-slides
+```
+
+or
+
+```sh
+yarn add re-react-page-slides
 ```
 
 ## Demo
@@ -14,6 +19,7 @@ npm install --save react-page-slides
 [Click here](https://wermetal.github.io/react-page-slides/)
 
 ## Usage
+
 ```
 import React from 'react';
 import {ISlideConfig, PageSlides, SlideParallaxType} from 'react-page-slides';
@@ -55,18 +61,17 @@ export const MainPage = () => {
 
 ## Props
 
-* enableAutoScroll - scroll slides automatically or not
-* transitionSpeed - speed of scrolling in milliseconds when using enableAutoScroll = true
-* slides - array of configurations of slides. Configurations must implement interface ISlideConfig
+- enableAutoScroll - scroll slides automatically or not
+- transitionSpeed - speed of scrolling in milliseconds when using enableAutoScroll = true
+- slides - array of configurations of slides. Configurations must implement interface ISlideConfig
+
 ```
 interface ISlideConfig {
     content: any; // content of slide.
     style: CSSProperties //css properties. can be using for setting of background to slide.
 }
 ```
-* parallax - parallax settings. Takes two options - offset of parallax (allows float values from 0 to 1) and type ('reveal' or 'cover');
-* currentSlideIndex - can be using for scrolling to particular slide (allows integer values from 0 to slides.length - 1). You can use it with react-router.
-* onChange - subscribe to change slide event. first parameter of callback - index of current slide.
 
-
-
+- parallax - parallax settings. Takes two options - offset of parallax (allows float values from 0 to 1) and type ('reveal' or 'cover');
+- currentSlideIndex - can be using for scrolling to particular slide (allows integer values from 0 to slides.length - 1). You can use it with react-router.
+- onChange - subscribe to change slide event. first parameter of callback - index of current slide.
