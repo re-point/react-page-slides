@@ -1,17 +1,17 @@
-# re-react-page-slides
+# @re_point/re-react-page-slides
 
 React component for creating fullscreen scrolling websites with parallax effect. Supports Typescript.
 
 ## Installation
 
 ```sh
-npm install --save re-react-page-slides
+npm install --save @re_point/re-react-page-slides
 ```
 
 or
 
 ```sh
-yarn add re-react-page-slides
+yarn add @re_point/re-react-page-slides
 ```
 
 ## Demo
@@ -22,7 +22,7 @@ yarn add re-react-page-slides
 
 ```
 import React from 'react';
-import {ISlideConfig, PageSlides, SlideParallaxType} from 're-react-page-slides';
+import {ISlideConfig, PageSlides, SlideParallaxType} from '@re_point/re-react-page-slides';
 
 export const MainPage = () => {
     const slides: ISlideConfig[] = [
