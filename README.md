@@ -22,7 +22,7 @@ yarn add re-react-page-slides
 
 ```
 import React from 'react';
-import {ISlideConfig, PageSlides, SlideParallaxType} from 'react-page-slides';
+import {ISlideConfig, PageSlides, SlideParallaxType} from 're-react-page-slides';
 
 export const MainPage = () => {
     const slides: ISlideConfig[] = [

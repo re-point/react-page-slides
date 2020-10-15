@@ -10,7 +10,6 @@
 /build
 
 .idea
-/dist
 /example/dist
 
 # misc
