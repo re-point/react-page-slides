@@ -4,10 +4,13 @@
   "description": "React component for creating fullscreen scrolling websites with parallax effect. Supports Typescript.",
   "license": "MIT",
   "author": {
-    "name": "Andrii Golubenko, re:point",
-    "email": "wermetal@gmail.com"
+    "name": "irinagizbrekht",
+    "email": "i.gizbrekht@repoint.io"
   },
   "repository": "https://github.com/re-point/react-page-slides.git",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "files": [
     "/dist",
     "/src"
