@@ -45,11 +45,15 @@ export class PageSlides extends React.Component<
   };
 
   getHeight() {
-    return (
-      window.innerHeight ||
-      document.documentElement.clientHeight ||
-      document.body.clientHeight
-    );
+    if (typeof window !== `undefined`) {
+      return (
+        window.innerHeight ||
+        document.documentElement.clientHeight ||
+        document.body.clientHeight
+      );
+    }
+
+    return 0;
   }
 
   render() {
