@@ -38,12 +38,9 @@ var PageSlides = /** @class */ (function (_super) {
         window.removeEventListener("resize", this.onResize);
     };
     PageSlides.prototype.getHeight = function () {
-        if (typeof window !== "undefined") {
-            return (window.innerHeight ||
-                document.documentElement.clientHeight ||
-                document.body.clientHeight);
-        }
-        return 0;
+        return ((typeof window !== "undefined" && window.innerHeight) ||
+            document.documentElement.clientHeight ||
+            document.body.clientHeight);
     };
     PageSlides.prototype.render = function () {
         if (this.props.enableAutoScroll) {
