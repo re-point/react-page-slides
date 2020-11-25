@@ -58,7 +58,7 @@ export class AutoSlidesContainer extends React.Component<
   };
 
   private touchStart: number;
-  private prevWheelDelta = 0;
+  // private prevWheelDelta = 0;
   private block = false;
 
   componentDidMount() {
@@ -94,14 +94,14 @@ export class AutoSlidesContainer extends React.Component<
     event.preventDefault();
     const delta = -event.deltaY;
     if (!this.block) {
-      if (
-        Math.abs(this.prevWheelDelta) < Math.abs(delta) ||
-        delta % 120 === 0
-      ) {
-        this.updateCurrentPage(delta < 0);
-      }
+      // if (
+      //   Math.abs(this.prevWheelDelta) < Math.abs(delta) ||
+      //   delta % 120 === 0
+      // ) {
+      this.updateCurrentPage(delta < 0);
+      // }
     }
-    this.prevWheelDelta = delta;
+    // this.prevWheelDelta = delta;
   };
 
   handleKeyDown = (event: KeyboardEvent) => {

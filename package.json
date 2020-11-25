@@ -1,6 +1,6 @@
 {
   "name": "@re_point/react-page-slides",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "React component for creating fullscreen scrolling websites with parallax effect. Supports Typescript.",
   "license": "MIT",
   "author": "irinagizbrekht <i.gizbrekht@repoint.io>",

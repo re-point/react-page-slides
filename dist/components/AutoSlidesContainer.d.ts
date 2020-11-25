@@ -27,7 +27,6 @@ export declare class AutoSlidesContainer extends React.Component<IAutoSlidesCont
         currentSlideIndex: number;
     };
     private touchStart;
-    private prevWheelDelta;
     private block;
     componentDidMount(): void;
     componentDidUpdate(prevProps: IAutoSlidesContainerProps, prevState: IAutoSlidesContainerState): void;

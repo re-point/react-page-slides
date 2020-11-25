@@ -24,18 +24,20 @@ var AutoSlidesContainer = /** @class */ (function (_super) {
         _this.state = {
             currentSlideIndex: 0,
         };
-        _this.prevWheelDelta = 0;
+        // private prevWheelDelta = 0;
         _this.block = false;
         _this.handleMouseWheel = function (event) {
             event.preventDefault();
             var delta = -event.deltaY;
             if (!_this.block) {
-                if (Math.abs(_this.prevWheelDelta) < Math.abs(delta) ||
-                    delta % 120 === 0) {
-                    _this.updateCurrentPage(delta < 0);
-                }
+                // if (
+                //   Math.abs(this.prevWheelDelta) < Math.abs(delta) ||
+                //   delta % 120 === 0
+                // ) {
+                _this.updateCurrentPage(delta < 0);
+                // }
             }
-            _this.prevWheelDelta = delta;
+            // this.prevWheelDelta = delta;
         };
         _this.handleKeyDown = function (event) {
             if (!_this.block) {
