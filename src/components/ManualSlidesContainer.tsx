@@ -131,7 +131,6 @@ export class ManualSlidesContainer extends React.PureComponent<
     return {
       height: `${height}px`,
       position: "relative",
-      touchAction: "none",
       padding: 0,
       margin: 0,
       transform: "translate3d(0px, 0px, 0px)",
